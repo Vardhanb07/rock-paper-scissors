@@ -15,10 +15,9 @@ function getHumanChoice(){
     return choice;
 }
 
-let humanScore = 0;
 let computerScore = 0;
-let humanChoice = getHumanChoice();
-let computerChoice = getComputerChoice();
+let humanScore = 0;
+
 function playGame(x,y){
     //win
     if (x === 'rock' && y === 'scissors'){
@@ -47,5 +46,19 @@ function playGame(x,y){
         console.log("It's a tie!");
     }
 }
+
+function playRound(){
+    let humanChoice = getHumanChoice();
+    let computerChoice = getComputerChoice();
+    return playGame(humanChoice,computerChoice);
+}
+
+for(let i = 0; i < 5; i++){
+    playRound();
+}
+
+console.log("Your score : " + humanScore);
+console.log("Computer score : " + computerScore);
+
 
 
