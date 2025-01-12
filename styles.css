@@ -1,0 +1,20 @@
+body{
+    margin : 0px;
+    padding : 0px;
+}
+
+body > div{
+    display : flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height : 100vh;
+}
+.paper, .rock, .scissors{
+    border : 0px;
+    cursor: pointer;
+    margin : 0px;
+    padding : 0px;
+}
+.paper{
+
+}
