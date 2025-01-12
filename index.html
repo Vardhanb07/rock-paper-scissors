@@ -6,13 +6,32 @@
     <title>rock-papers-scissors</title>
     <link rel="stylesheet" href="styles.css">
     <script src="./script.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
 </head>
 <body>
-    <div>
+    <header class="head">
+        <h1>SELECT ONE!</h1>
+    </header>
+    <section class="buttons">
         <button class="rock"><img src="./images/rock.png" alt="Rock"></button>
         <button class="paper"><img src="./images/paper.png" alt="Paper"></button>
         <button class="scissors"><img src="./images/scissors.png" alt="scissors"></button>
-    </div>
-
+    </section>
+    <section class="content">
+        <div class="choice">
+            <p class="humanChoice">Your choice : </p>
+            <p class="computerChoice">Computer choice : </p>
+        </div>
+        <div class="score">
+            <p class="humanScore">Your score : </p>
+            <p class="computerScore">Computer score : </p>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Copyright &copy; 2025 Vardhan</p>
+    </footer>
 </body>
 </html>
