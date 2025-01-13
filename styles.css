@@ -24,7 +24,19 @@ body > .buttons{
 .content {
     font-family: "Roboto";
     display: flex;
+    flex-direction: column;
 }
+
+.choice{
+    display: flex;
+    justify-content: space-around;
+}
+
+.score{
+    display : flex;
+    justify-content: space-around;
+}
+
 
 .footer {
     text-align: center;
