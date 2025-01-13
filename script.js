@@ -60,3 +60,30 @@ function playRound(){
 // console.log("Your score : " + humanScore);
 // console.log("Computer score : " + computerScore);
 
+//Shows human choice onto the screen 
+const  choice = document.querySelector('.humanChoice');
+//Rock 
+const rock = document.querySelector('.rock');
+rock.addEventListener('click', () => {
+    choice.textContent = 'Your choice : Rock';
+})
+//Paper
+const paper = document.querySelector('.paper');
+paper.addEventListener('click', () => {
+    choice.textContent = 'Your choice : Paper';
+})
+//Scissors
+const scissors = document.querySelector('.scissors');
+scissors.addEventListener('click', () => {
+    choice.textContent = 'Your choice : Scissors';
+})
+
+//Shows computer choice onto the screen
+// const text = `Computer choice : $(cchoice)`;
+// const computerChoice = document.querySelector('.computerChoice');
+// rock.addEventListener('click', () => {
+//     computerChoice.textContent = text;
+// })
+
+
+
