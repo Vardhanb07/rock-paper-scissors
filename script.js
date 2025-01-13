@@ -53,12 +53,10 @@ function playRound(){
     return playGame(humanChoice,computerChoice);
 }
 
-for(let i = 0; i < 5; i++){
-    playRound();
-}
+// for(let i = 0; i < 5; i++){
+//     playRound();
+// }
 
-console.log("Your score : " + humanScore);
-console.log("Computer score : " + computerScore);
-
-
+// console.log("Your score : " + humanScore);
+// console.log("Computer score : " + computerScore);
 
