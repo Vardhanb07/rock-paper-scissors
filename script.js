@@ -61,29 +61,39 @@ function playRound(){
 // console.log("Computer score : " + computerScore);
 
 //Shows human choice onto the screen 
-const  choice = document.querySelector('.humanChoice');
+const  hChoice = document.querySelector('.humanChoice');
 //Rock 
 const rock = document.querySelector('.rock');
 rock.addEventListener('click', () => {
-    choice.textContent = 'Your choice : Rock';
+    hChoice.textContent = 'Your choice : Rock';
 })
 //Paper
 const paper = document.querySelector('.paper');
 paper.addEventListener('click', () => {
-    choice.textContent = 'Your choice : Paper';
+    hChoice.textContent = 'Your choice : Paper';
 })
 //Scissors
 const scissors = document.querySelector('.scissors');
 scissors.addEventListener('click', () => {
-    choice.textContent = 'Your choice : Scissors';
+    hChoice.textContent = 'Your choice : Scissors';
 })
 
 //Shows computer choice onto the screen
-// const text = `Computer choice : $(cchoice)`;
-// const computerChoice = document.querySelector('.computerChoice');
-// rock.addEventListener('click', () => {
-//     computerChoice.textContent = text;
-// })
+const cChoice = document.querySelector('.computerChoice');
+rock.addEventListener('click', () => {
+    cChoice.textContent = `Computer choice : ${getComputerChoice()}`;  
+})
+
+paper.addEventListener('click', () => {
+    cChoice.textContent = `Computer choice : ${getComputerChoice()}`;  
+})
+
+scissors.addEventListener('click', () => {
+    cChoice.textContent = `Computer choice : ${getComputerChoice()}`;  
+})
+
+
+
 
 
 
