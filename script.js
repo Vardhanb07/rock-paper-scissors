@@ -42,9 +42,9 @@ function playGame(x,y){
         computerScore++;
     }
     //tie
-    else if(x === y){
-        //console.log("It's a tie!");
-    }
+    // else if(x === y){
+    //     //console.log("It's a tie!");
+    // }
 }
 
 // function playRound(){
@@ -65,13 +65,17 @@ const cScore = document.querySelector('.computerScore');
 //Shows human choice onto the screen 
 const  hChoice = document.querySelector('.humanChoice');
 //Rock 
+const cChoice = document.querySelector('.computerChoice');
 const rock = document.querySelector('.rock');
+let cc = getComputerChoice();
 rock.addEventListener('click', () => {
     hChoice.textContent = 'Your choice : Rock';
-    playGame('rock',getComputerChoice());
+    playGame('rock',cc);
     hScore.textContent = `Your score : ${humanScore}`;
-    cScore.textContent = `Computer score : ${computerScore}`;
+    // cScore.textContent = `Computer score : ${cc}`;
+    cc = getComputerChoice();
 })
+console.log(cc);
 //Paper
 const paper = document.querySelector('.paper');
 paper.addEventListener('click', () => {
@@ -79,6 +83,7 @@ paper.addEventListener('click', () => {
     playGame('paper',getComputerChoice());
     hScore.textContent = `Your score : ${humanScore}`;
     cScore.textContent = `Computer score : ${computerScore}`;
+    cChoice.textContent = `Computer choice : ${getComputerChoice()}`;
 })
 //Scissors
 const scissors = document.querySelector('.scissors');
@@ -88,11 +93,10 @@ scissors.addEventListener('click', () => {
     hScore.textContent = `Your score : ${humanScore}`;
     cScore.textContent = `Computer score : ${computerScore}`;
 })
-//Shows computer choice onto the screen
-const cChoice = document.querySelector('.computerChoice');
+// Shows computer choice onto the screen
 rock.addEventListener('click', () => {
-    cChoice.textContent = `Computer choice : ${getComputerChoice()}`; 
-    console.log(getComputerChoice()); 
+    cChoice.textContent = `Computer choice : ${cc}`; 
+    console.log(cc); 
 })
 
 paper.addEventListener('click', () => {
@@ -104,9 +108,3 @@ scissors.addEventListener('click', () => {
     cChoice.textContent = `Computer choice : ${getComputerChoice()}`;  
     console.log(getComputerChoice());
 })
-
-
-
-
-
-
