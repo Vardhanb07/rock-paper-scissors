@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rock-papers-scissors</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="./logic.js" defer></script>
+    <script src="./script.js" defer></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
@@ -16,9 +16,9 @@
         <h1>SELECT ONE!</h1>
     </header>
     <section class="buttons">
-        <button class="rock" title="Rock"><img src="./images/rock.png" alt="Rock"></button>
-        <button class="paper" title="Paper"><img src="./images/paper.png" alt="Paper"></button>
-        <button class="scissors" title="Scissors"><img src="./images/scissors.png" alt="Scissors"></button>
+        <button class="rock button" title="Rock"><img src="./images/rock.png" alt="Rock"></button>
+        <button class="paper button" title="Paper"><img src="./images/paper.png" alt="Paper"></button>
+        <button class="scissors button" title="Scissors"><img src="./images/scissors.png" alt="Scissors"></button>
     </section>
     <section class="content">
         <div class="choice">
@@ -29,9 +29,11 @@
             <p class="humanScore">Your score : 0</p>
             <p class="computerScore">Computer score : 0</p>
         </div>
-        <div class="wining-prompt">
-            <p class="humanWin"></p>
-            <p class="computerWin"></p>
+        <div class="feedback">
+            <p class="feedbackPrompt"></p>
+        </div>
+        <div class="reset">
+            <button class="resetButton" title="Reset your score">RESET</button>
         </div>
     </section>
     <footer class="footer">
