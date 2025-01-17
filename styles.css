@@ -39,10 +39,29 @@ body > .buttons{
     box-sizing: border-box;
 }
 
+.feedback {
+    display : flex;
+    justify-content: center;
+}
+
+.reset{
+    display : flex;
+    justify-content: center;
+}
+
+.resetButton {
+    background-color: #fff;
+    border-radius: 8px;
+    border-width: 0px;
+    font-size: 32px;
+    font-family: "Oswald";
+    color : #000000;
+    cursor: pointer;
+}
 .footer {
     font-family: "Roboto";
     position : fixed;
     bottom : 0;
-    left : 45%;
-    right : 40%;
+    left : 43%;
+    right : 42%;
 }
