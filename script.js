@@ -38,6 +38,7 @@ function reset() {
     computerScoreInText.textContent = 'Computer score : 0';
     humanScore = 0;
     computerScore = 0;
+    count = 0;
 }
 
 //x : human information, y : computer information
@@ -100,9 +101,31 @@ scissors.addEventListener('click', () => {
     console.log(count);
 });
 
-const button = document.querySelector('.button');
+rock.addEventListener('click',() => {
+    if(count >= 5){
+        if(computerScore < humanScore){
+            feedback.textContent = 'You win!';
+            reset();
+        }else{
+            feedback.textContent = 'You lose!';
+            reset();
+        }
+    }
+});
 
-button.addEventListener('click',() => {
+paper.addEventListener('click',() => {
+    if(count >= 5){
+        if(computerScore < humanScore){
+            feedback.textContent = 'You win!';
+            reset();
+        }else{
+            feedback.textContent = 'You lose!';
+            reset();
+        }
+    }
+});
+
+scissors.addEventListener('click',() => {
     if(count >= 5){
         if(computerScore < humanScore){
             feedback.textContent = 'You win!';
@@ -120,4 +143,3 @@ resetInfo.addEventListener('click', () => {
     reset();
     feedback.textContent = '';
 });
-
